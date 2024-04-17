@@ -1,0 +1,117 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.c397e5a0.png"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.250131de.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.6252c568.png"><link rel="manifest" href="up_/asset/favico/site.webmanifest"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="js--01-destructureArrayObject.022b0fe5.css"><link rel="stylesheet" href="accInfo.befc29d7.css"><link rel="stylesheet" href="index.bf990345.css"><script src="accInfo.227ba713.js" defer></script><script type="module" src="index.5902a7d0.js" defer></script><script src="index.b7725e54.js" defer nomodule></script><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" defer></script><title>JS : de-structure array-object</title></head><body id="top-side"> <div class="content__page--container"> <header class="nav--container"> <h1 class="main__header--01" id="js--01"> DE-STRUCTURE : ARRAY and OBJECT </h1> <svg><use xlink:href="zSprite.96b7e97e.svg#js"/></svg> <section class="posts"> <ul id="js__post--1"> <li class="post"> <a href="#index-arrdestructure" class="post__item">array destructure</a><a href="#index-basicarrdestructure" class="post__item">basic array destructuring</a><a href="#index-defaultvalue" class="post__item">default value</a><a href="#index-skippingitems" class="post__item">Skipping items</a><a href="#index-swappingvariables" class="post__item">swapping variable</a><a href="#index-restpattern" class="post__item">rest pattern</a><a href="#index-nestedarraydestructuring" class="post__item">nested array destructuring </a><a href="#index-destructurefuncparam" class="post__item">destructuring function paramter</a><a href="#index-usewithiterable" class="post__item">use with iterable</a><a href="#index-destructurestring" class="post__item">destructuring string</a> </li> <li class="post"> <a href="#index-objectdestructure" class="post__item">object destructure</a><a href="#index-basicdestructure" class="post__item">basic destructure</a><a href="#index-renamevariable" class="post__item">rename variable</a><a href="#index-defaultvalue" class="post__item">default value</a><a href="index-nestedobjectdestructure" class="post__item">nested object destructure</a><a href="#index-functionparamdestructure" class="post__item">function parameter destructure</a><a href="#index-restpatterndestructure" class="post__item">rest pattern destructuring</a> </li> </ul> </section> </header>  <button class="content__nav--btn nav__icon--open util-sticky" id="nav__btn__container--content"> <svg class="open"><use xlink:href="zSprite.96b7e97e.svg#nav-open"/></svg> </button> <nav class="sticky__nav--container"> <section class="post__navigation--container sticky__nav--el"> <span>navigate posts</span> <svg class="arrowDown" id="dropdownMenu__btn"><use xlink:href="zSprite.96b7e97e.svg#arrow-down"/></svg> <ul class="nav__el--wrap"> <svg id="nav__close--btn"><use xlink:href="zSprite.96b7e97e.svg#nav-close"/></svg> <li class="nav__item"> <a href="index.html#html--section">navigate to html</a> </li> <li class="nav__item"> <a href="index.html#css--section">navigate to css</a> </li> <li class="nav__item"> <a href="index.html#sass--section">navigate to sass</a> </li> <li class="link-active nav__item"> <a href="index.html#js--section">navigate to javascript</a> </li> <li class="nav__item"> <a href="index.html#dom--section">navigate to dom</a> </li> <li class="nav__item"> <a href="index.html#git--section">navigate to git</a> </li> <li class="nav__item"> <a href="index.html#miscs--section">navigate to miscs</a> </li> </ul> </section> <section class="sticky__nav--el" id="view__changer--container"> <span>change mode</span> <div class="night--icon view__changer__btn--container"> <svg id="view__changer--btn" class="day__mode__icon--off"><use xlink:href="zSprite.96b7e97e.svg#night-mode"/></svg> </div> </section> <section class="sticky__nav--el"> <a href="index.html"> <span>main home</span> <svg><use xlink:href="zSprite.96b7e97e.svg#home"/></svg> </a> </section> </nav> <div class="overlay"></div>  <main class="line-numbers util-margin-bottom-high util-margin-top-high" id="content__main--section">  <button class="float__btn--container" id="nav__top--btn"> <a href="#top-side"> <svg><use xlink:href="zSprite.96b7e97e.svg#go-top"/></svg> <span class="navigator__btn">top</span> </a> </button>  <button class="float__btn--container" id="nav__bottom--btn"> <a href="#bottom-side"> <svg><use xlink:href="zSprite.96b7e97e.svg#go-down"/></svg> <span class="navigator__btn">bottom</span> </a> </button> <button class="contentPage__magic-btn"> <svg><use xlink:href="zSprite.96b7e97e.svg#content-magic"/></svg> </button>  <section class="content__magic inactive"> <section class="content__magic--font-section"> <span class="tab-header--span">font section</span> <figure> font family : <select class="font-family--input"> <option value>set a custom font</option> <option value="Inter">1.Inter</option> <option value="Merriweather">2.Merriweather</option> <option value="Open Sans">3. Open Sans</option> <option value="Work Sans">4.Work Sans</option> <option value="Lato">5.Lato</option> <option value="Arimo">6.Arimo</option> <option value="Roboto">7.Roboto</option> <option value="Montserrat">8.Montserrat</option> <option value="Cardo">9.Cardo</option> <option value="Lora">10.Lora</option> <option value="Tinos">11.Tinos</option> <option value="Consolas">12.Consolas</option> </select> </figure> <figure> Font Size: <span class="content__font-size--value">3</span> <input type="range" min="1" max="5" class="content-font--input"> </figure> </section> <section class="content__magic--color-section"> <span class="tab-header--span">color section</span> <figure> Font Color : <input type="color" name="color" id="custom-text-color"> </figure> <figure> Background Color : <input type="color" name="color" id="custom-bg-color"> </figure> </section> <section class="content__magic--misc-section"> <span class="tab-header--span">miscs section</span> <figure> padding (LTR): <span class="content__padding--value">3</span> <input type="range" min="1" max="5" class="content__padding__ltr"> </figure> <figure> line height: <span class="content__line-height--value">3</span> <input type="range" min="1" max="5" class="content__line-height"> </figure> <figure> text-alignment : <span class="content__text-alignment--value">ltr</span> <select class="contentMagic__text-alignment--input"> <option value="left">left</option> <option value="right">right</option> <option value="center">center</option> <option value="justify">justify</option> </select> </figure> </section> </section>  <section id="array-destructure" class="util-margin-bottom-high"> <h2>array destructure</h2> <article class="content__area--container"> <h3>Basic Array Destructuring</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+                let fruits = ['Apple', 'Banana'];
+                let [fruit1, fruit2] = fruits;
+              </code>
+            </pre> </article> <article class="content__area--container"> <h3>Default Values</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+                let [fruit1, fruit2 = 'Mango'] = ['Apple'];
+              </code>
+            </pre> <p class="content__post"> When the unpacked value is <span class="post__code">undefined</span>, a default value can be assigned </p> </article> <article class="content__area--container"> <h3>Skipping Items</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+                 let [fruit1, , fruit3] = ['Apple', 'Banana', 'Grapes'];
+              </code>
+            </pre> <p class="content__post"> we can skip values that are not needed... by using commas </p> </article> <article class="content__area--container"> <h3>Swapping Variables</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+              let a = 1, b = 2;
+              [b, a] = [a, b];
+              </code>
+            </pre> </article> <article class="content__area--container"> <h3>Rest Pattern</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+                let [fruit1, ...otherFruits] = ['Apple', 'Banana', 'Grapes', 'Mango'];
+              </code>
+            </pre> <p class="content__post"> Use <span class="post__code">rest pattern</span> to capture the rest of the elements into a new array. </p> </article> <article class="content__area--container"> <h3>Nested Array Destructuring</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+                let colors = ['red', ['green', 'lightgreen'], 'blue'];
+                let [color1, [color2]] = colors;
+              </code>
+            </pre> </article> <article class="content__area--container"> <h3>Destructuring Function Parameters</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+              function describeFruit([fruit, color]) {
+                console.log(`${fruit} is ${color}.`);
+              }
+
+              describeFruit(['Mango', 'yellow']); // Mango is yellow.
+              </code>
+            </pre> </article> <article class="content__area--container"> <h3>Use with Iterables</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+                let [a, b, c] = 'abc';
+              </code>
+            </pre> </article> <article class="content__area--container"> <h3>Destructuring with Strings</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+                let [char1, char2] = 'hi';
+              </code>
+            </pre> </article> </section> <section id="object-destructure" class="util-margin-bottom-high"> <h2>object destructure</h2> <article class="content__area--container util-border-bottom-double util-padding-bottom"> <h3>Basic Destructuring</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+                const person = {
+                  name: 'John',
+                  age: 30
+                };
+
+                // Destructure the object
+                const { name, age } = person;
+              </code>
+            </pre> <p class="content__post"> can extract multiple properties from an object and assign them to variables with the same names as the properties </p> </article> <article class="content__area--container util-border-bottom-double util-padding-bottom"> <h3>Renaming Variables</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+                const person = {
+                  name: 'John',
+                  age: 30
+                };
+
+                // Destructuring with different variable names
+                const { name: personName, age: personAge } = person;
+              </code>
+            </pre> <p class="content__post"> can extract multiple properties from an Assign properties to variables with different names, we can do so by providing a new variable name </p> </article> <article class="content__area--container util-border-bottom-double util-padding-bottom"> <h3>Default Values</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+                const person = {
+                  name: 'John',
+                  age: 30
+                };
+
+                // Default values
+                const { gender = 'Unknown' } = person;
+              </code>
+            </pre> <p class="content__post"> can assign default values that will be used if the property is <span class="post__code">not found</span> on the object. </p> </article> <article class="content__area--container util-border-bottom-double util-padding-bottom"> <h3>Nested Object Destructuring</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+                const person = {
+                  name: 'John',
+                  age: 30,
+                  parent: {
+                    father: 'Robert'
+                }
+                };
+
+                // Nested object destructuring
+                const {
+                name,
+                age,
+                parent: { father }
+                } = person;
+              </code>
+            </pre> </article> <article class="content__area--container util-border-bottom-double util-padding-bottom"> <h3>Function Parameter Destructuring</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+                function greet({ name, age }) {
+                  console.log(`Hello, my name is ${name} and I am ${age} years old.`);
+                }
+
+                const person = {
+                  name: 'John',
+                  age: 30
+                };
+
+                greet(person);
+              </code>
+            </pre> <p class="content__post"> Destructure objects right in function parameters. This can be especially useful when dealing with options objects. </p> </article> <article class="content__area--container util-border-bottom-double util-padding-bottom"> <h3>REST Pattern with Destructuring</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+                const person = {
+                  name: 'John',
+                  age: 30,
+                  gender: 'Male'
+                };
+
+                // REST pattern in destructuring
+                const { name, ...rest } = person;
+                console.log(name); // John
+                console.log(rest); // { age : 30, gender : male}
+              </code>
+            </pre> <p class="content__post"> Rest properties collect the remaining enumerable property keys that are not already picked off by the destructuring pattern. </p> </article> </section> </main>  <footer class="contentpage__indexes--container util-margin-top-high" id="bottom-side"> <h4>JAVASCRIPT indexes</h4> <nav> <ul> <li class="item link-active"> <a href="js--01-destructureArrayObject.html" class="item-link">destructure array and object</a> </li> <li class="item"> <a href="js--02-es6SpreadRest.html" class="item-link">spread operator and rest paramter</a> </li> </ul> </nav> </footer> </div> </body></html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.c397e5a0.png"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.250131de.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.6252c568.png"><link rel="manifest" href="up_/asset/favico/site.webmanifest"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="js--01-destructureArrayObject.022b0fe5.css"><link rel="stylesheet" href="accInfo.befc29d7.css"><link rel="stylesheet" href="index.bf990345.css"><script src="accInfo.227ba713.js" defer></script><script type="module" src="index.5902a7d0.js" defer></script><script src="index.b7725e54.js" defer nomodule></script><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" defer></script><title>JS : es6-spread-rest</title></head><body id="top-side"> <div class="content__page--container"> <header class="nav--container"> <h1 class="main__header--02" id="js--02"> SPREAD OPERATOR - REST PARAMTER </h1> <svg><use xlink:href="zSprite.96b7e97e.svg#js"/></svg> <section class="posts"> <ul id="js__post--2"> <li class="post"> <a href="#index-spreadoperator" class="post__item">spread operator</a><a href="#index-infospreadoperator" class="post__item">information spread operator</a><a href="#index-combinearray" class="post__item">combine array</a><a href="#index-concatearray" class="post__item">concat array</a><a href="#index-copyarray" class="post__item">copy array</a><a href="#index-spreadelfunc" class="post__item">spread elements on function call</a><a href="#index-spreadstring" class="post__item">spread string</a><a href="#index-objectliteral" class="post__item">object literal</a><a href="#index-defaultpropdestructure" class="post__item">default prop and destructuring</a><a href="#index-cloneobject" class="post__item">clone object</a> </li> <li class="post"> <a href="#index-restparam" class="post__item">rest parameter</a><a href="#index-inforestparam" class="post__item">information about rest parameter</a><a href="#index-functionarg" class="post__item">function argument</a><a href="#index-destructurearr" class="post__item">destructuring array</a><a href="#index-destructureobj" class="post__item">destructuring object</a><a href="#index-combinearr" class="post__item">combine array</a> </li> </ul> </section> </header>  <button class="content__nav--btn nav__icon--open util-sticky" id="nav__btn__container--content"> <svg class="open"><use xlink:href="zSprite.96b7e97e.svg#nav-open"/></svg> </button> <nav class="sticky__nav--container"> <section class="post__navigation--container sticky__nav--el"> <span>navigate posts</span> <svg class="arrowDown" id="dropdownMenu__btn"><use xlink:href="zSprite.96b7e97e.svg#arrow-down"/></svg> <ul class="nav__el--wrap"> <svg id="nav__close--btn"><use xlink:href="zSprite.96b7e97e.svg#nav-close"/></svg> <li class="nav__item"> <a href="index.html#html--section">navigate to html</a> </li> <li class="nav__item"> <a href="index.html#css--section">navigate to css</a> </li> <li class="nav__item"> <a href="index.html#sass--section">navigate to sass</a> </li> <li class="link-active nav__item"> <a href="index.html#js--section">navigate to javascript</a> </li> <li class="nav__item"> <a href="index.html#dom--section">navigate to dom</a> </li> <li class="nav__item"> <a href="index.html#git--section">navigate to git</a> </li> <li class="nav__item"> <a href="index.html#miscs--section">navigate to miscs</a> </li> </ul> </section> <section class="sticky__nav--el" id="view__changer--container"> <span>change mode</span> <div class="night--icon view__changer__btn--container"> <svg id="view__changer--btn" class="day__mode__icon--off"><use xlink:href="zSprite.96b7e97e.svg#night-mode"/></svg> </div> </section> <section class="sticky__nav--el"> <a href="index.html"> <span>main home</span> <svg><use xlink:href="zSprite.96b7e97e.svg#home"/></svg> </a> </section> </nav> <div class="overlay"></div>  <main class="line-numbers util-margin-bottom-high util-margin-top-high" id="content__main--section">  <button class="float__btn--container" id="nav__top--btn"> <a href="#top-side"> <svg><use xlink:href="zSprite.96b7e97e.svg#go-top"/></svg> <span class="navigator__btn">top</span> </a> </button>  <button class="float__btn--container" id="nav__bottom--btn"> <a href="#bottom-side"> <svg><use xlink:href="zSprite.96b7e97e.svg#go-down"/></svg> <span class="navigator__btn">bottom</span> </a> </button> <button class="contentPage__magic-btn"> <svg><use xlink:href="zSprite.96b7e97e.svg#content-magic"/></svg> </button>  <section class="content__magic inactive"> <section class="content__magic--font-section"> <span class="tab-header--span">font section</span> <figure> font family : <select class="font-family--input"> <option value>set a custom font</option> <option value="Inter">1.Inter</option> <option value="Merriweather">2.Merriweather</option> <option value="Open Sans">3. Open Sans</option> <option value="Work Sans">4.Work Sans</option> <option value="Lato">5.Lato</option> <option value="Arimo">6.Arimo</option> <option value="Roboto">7.Roboto</option> <option value="Montserrat">8.Montserrat</option> <option value="Cardo">9.Cardo</option> <option value="Lora">10.Lora</option> <option value="Tinos">11.Tinos</option> <option value="Consolas">12.Consolas</option> </select> </figure> <figure> Font Size: <span class="content__font-size--value">3</span> <input type="range" min="1" max="5" class="content-font--input"> </figure> </section> <section class="content__magic--color-section"> <span class="tab-header--span">color section</span> <figure> Font Color : <input type="color" name="color" id="custom-text-color"> </figure> <figure> Background Color : <input type="color" name="color" id="custom-bg-color"> </figure> </section> <section class="content__magic--misc-section"> <span class="tab-header--span">miscs section</span> <figure> padding (LTR): <span class="content__padding--value">3</span> <input type="range" min="1" max="5" class="content__padding__ltr"> </figure> <figure> line height: <span class="content__line-height--value">3</span> <input type="range" min="1" max="5" class="content__line-height"> </figure> <figure> text-alignment : <span class="content__text-alignment--value">ltr</span> <select class="contentMagic__text-alignment--input"> <option value="left">left</option> <option value="right">right</option> <option value="center">center</option> <option value="justify">justify</option> </select> </figure> </section> </section>  <section id="index-spreadoperator" class="util-margin-bottom-high"> <h2>spread operator</h2> <article class="content__area--container" id="index-infospreadoperator"> <h3>information about spread operator</h3> <p class="content__post"> The spread operator allows an iterable, such as an array, to be expanded into individual elements. <br> <br> This operator is commonly used to make copies of arrays, merge arrays, or pass elements of an array as arguments to a function </p> </article> <article class="content__area--container" id="index-combinearray"> <h3>Combining Arrays</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+                let fruits = ['apple', 'banana'];
+                let berries = ['strawberry', 'raspberry'];
+                let combined = [...fruits, ...berries];
+                console.log(combined); // Output: ["apple", "banana", "strawberry", "raspberry"]
+              </code>
+            </pre> <p class="content__post"> Spread syntax can combine multiple arrays into one. </p> </article> <article class="content__area--container" id="index-concatearray"> <h3>Concatenating Arrays</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+                let numbers1 = [1, 2, 3];
+                let numbers2 = [4, 5, 6];
+                let concatenated = [...numbers1, ...numbers2];
+                console.log(concatenated); // Output: [1, 2, 3, 4, 5, 6]
+              </code>
+            </pre> </article> <article class="content__area--container" id="index-copyarray"> <h3>Copying Arrays</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+                  let original = [1, 2, 3];
+                  let copy = [...original];
+                  console.log(copy); // Output: [1, 2, 3]
+              </code>
+            </pre> </article> <article class="content__area--container" id="index-spreadelfunc"> <h3>Spreading Elements on Function Calls</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+                function sum(x, y, z) {
+                  return x + y + z;
+                }
+
+                let numbers = [1, 2, 3];
+                console.log(sum(...numbers)); // Output: 6
+              </code>
+            </pre> </article> <article class="content__area--container" id="index-spreadstring"> <h3>Spreading Strings</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+              let str = "hello";
+              let chars = [...str];
+              console.log(chars); // Output: ["h", "e", "l", "l", "o"]
+              </code>
+            </pre> </article> <article class="content__area--container" id="index-objectliteral"> <h3>Object Literals</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+                let obj1 = { foo: 'bar', x: 42 };
+                let obj2 = { foo: 'baz', y: 13 };
+                let mergedObj = { ...obj1, ...obj2 };
+                console.log(mergedObj); // Output: { foo: "baz", x: 42, y: 13 }
+                // Note that obj2's foo overwrites obj1's foo.
+              </code>
+            </pre> </article> <article class="content__area--container" id="index-defaultpropdestructure"> <h3>Default Props and Destructuring</h3> <pre>
+              <code class="language-react match-braces rainbow-braces">
+                const Modal = ({ title, ...otherProps }) => {
+                  return (
+                    <div {...otherprops}>
+                      <h1>{title}</h1>
+                      {/* content */}
+                    </div>
+                  );
+                };
+              </code>
+            </pre> <p class="content__post"> Useful in React for component props and state handling </p> </article> <article class="content__area--container" id="index-cloneobject"> <h3>Cloning Objects</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+                let originalObj = { a: 1, b: 2 };
+                let clonedObj = { ...originalObj };
+                console.log(clonedObj); // Output: { a: 1, b: 2 }
+              </code>
+            </pre> </article> </section> <section class="util-margin-bottom-high" id="index-restparam"> <h2>rest paramter</h2> <article id="index-inforestparam" class="content__area--container util-border-bottom-double util-padding-bottom"> <h3>information about rest parameter</h3> <p class="content__post"> Rest parameter syntax in JavaScript is used to represent an indefinite number of arguments as an array. <br> <br> Typically used in function parameters and destructuring assignments. </p> </article> <article id="index-functionarg" class="content__area--container util-border-bottom-double util-padding-bottom"> <h3>Function Arguments</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+                function sum(...numbers) {
+                  return numbers.reduce((acc, current) => acc + current, 0);
+                }
+
+                console.log(sum(1, 2)); // 3
+                console.log(sum(1, 2, 3, 4, 5)); // 15
+              </code>
+            </pre> <p class="content__post"> Rest syntax allows you to create functions that accept any number of arguments. </p> </article> <article id="index-destructurearr" class="content__area--container util-border-bottom-double util-padding-bottom"> <h3>Destructuring Arrays</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+                const [first, ...restOfItems] = [10, 20, 30, 40];
+
+                console.log(first); // 10
+                console.log(restOfItems);  // [20, 30, 40]
+              </code>
+            </pre> <p class="content__post"> Rest syntax can gather the rest of the elements into an array when destructuring. </p> </article> <article id="ondex-destructureobj" class="content__area--container util-border-bottom-double util-padding-bottom"> <h3>Destructuring Objects</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+              const { a, ...restOfProps } = { a: 1, b: 2, c: 3, d: 4 };
+
+              console.log(a); // 1
+              console.log(restOfProps); // {b: 2, c: 3, d: 4}
+              </code>
+            </pre> <p class="content__post"> can collect remaining enumerable properties of an object. </p> </article> <article id="index-combinearr" class="content__area--container util-border-bottom-double util-padding-bottom"> <h3>Combine Arrays</h3> <pre>
+              <code class="language-js match-braces rainbow-braces">
+              const fruits = ['apple', 'banana'];
+              const moreFruits = ['orange', 'grape', ...fruits];
+
+              console.log(moreFruits); // ['orange', 'grape', 'apple', 'banana']
+              </code>
+            </pre> <p class="content__post"> Rest syntax can be a clean method to combine arrays </p> </article> </section> </main>  <footer class="contentpage__indexes--container util-margin-top-high" id="bottom-side"> <h4>JAVASCRIPT indexes</h4> <nav> <ul> <li class="item"> <a href="js--01-destructureArrayObject.html" class="item-link">destructure array and object</a> </li> <li class="item link-active"> <a href="js--02-es6SpreadRest.html" class="item-link">spread operator and rest paramter</a> </li> </ul> </nav> </footer> </div> </body></html>
